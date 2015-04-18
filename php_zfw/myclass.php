@@ -16,9 +16,10 @@ class Information{
 	public $title;
 	public $author;
 	public $content;
-	public $time;
+	public $data;
+	public $tim;
 	public $picture;
-	public $class;
+	public $cls;
 	}
 class Invitation{
 	public $id;

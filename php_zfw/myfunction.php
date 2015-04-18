@@ -74,6 +74,36 @@
 			mysql_query($sql);
 			}			
 	}
+	class InfoDAO{
+		
+		function findall(){
+			$sql = "select * from information";
+			$result = mysql_query($sql);
+
+			return $result;
+			}
+		
+		function findbyid($id){
+			$sql = "select * from information where id ='$id'";
+			$result = mysql_query($sql);
+			$row = mysql_fetch_array($result);
+			return $row;
+			}
+		function deletebyid($id){
+			$sql = "delete from information where id ='$id'";
+			mysql_query($sql);
+	
+			}
+		function add($info){
+			$sql = "insert into information(title, author, content, time, picture, class, data) values('$info->title', '$info->author', '$info->content', '$info->tim', '$info->picture', '$info->cls', '$info->data')";
+			mysql_query($sql);
+			}
+		function update($info){
+			
+			$sql = "update information set title = '$info->title', author ='$info->author', content = '$info->content', time = '$info->tim', picture = '$info->picture', class='$info->cls', data = '$info->data' where id = '$info->id'";
+			mysql_query($sql);
+			}			
+	}
 ?>
 <body>
 </body>

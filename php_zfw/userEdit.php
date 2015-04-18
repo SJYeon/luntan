@@ -13,8 +13,6 @@ require_once("import.php");
  $select = $_GET['select'];
  $id = $_GET['id'];
 
-
- 
  ?>
 <body>
 <?php if($select == 1) {

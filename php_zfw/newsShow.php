@@ -6,9 +6,5 @@
 </head>
 
 <body>
-<p><a href="usersShow.php"  target="right">用户管理</a></p>
-<p><a href="admShow.php" target="right">管理员管理</a></p>
-<p><a href="infoShow.php" target="right">资料管理</a></p>
-<p><a href="newsShow.php" target="right">资料管理</a></p>
 </body>
 </html>
