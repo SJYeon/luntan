@@ -1,11 +1,3 @@
-<!DOCTYPE HTML> 
-<html>
-<head>
-   <meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
-</head>
-<body>
-
-
  <?php
 include 'conn.php';
 
@@ -33,7 +25,6 @@ if($row==null)
  	echo "<a href='user_register.html'>返回</a>";
  	 }
  
-//mysql_close($con2);
+
 ?>
-</body>
-</html>
+
